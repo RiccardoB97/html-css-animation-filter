@@ -52,3 +52,12 @@
 .ex-7-img:hover{
     filter: hue-rotate(180deg) opacity(30%);
 }
+
+.ex-8-img{
+    transition: 2s;
+}
+
+.ex-8-img:hover{
+    filter: saturate(40) hue-rotate(60deg);
+    border-radius: 10%;
+}
