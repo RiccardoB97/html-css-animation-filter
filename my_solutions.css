@@ -147,7 +147,7 @@
         top: -10px;
     }
     25%{
-        /* Moves all the way to the left minus half of its width*/
+        /* Moves all the way to the right minus half of its width*/
         left: calc(100% - 30px);
         top: -10px;
     }
@@ -173,4 +173,43 @@
         top: -10px;
     }
 }
+
+.ex-13-button:hover .ex-13-bottom-white{
+    animation: rotateBottom 3s linear;
+}
+
+@keyframes rotateBottom{
+    0%{
+        /* Starting position */
+        right: 20%;
+        bottom: -10px;
+    }
+    25%{
+        /* Moves all the way to the left minus part of its width*/
+        right: calc(100% - 50px);
+        bottom: -10px;
+    }
+    50%{
+        /* Moves up on the left side of 100% minus its height*/
+        right: calc(100% - 50px);
+        bottom: calc(100% - 10px);
+    }
+    75%{
+        /* Moves right on the top side */
+        right: -20px;
+        bottom: calc(100% - 10px);
+    }
+    95%{
+        /* Moves down on the right */
+        right: -20px;
+        bottom: -10px;
+    }
+
+    100%{
+        /* Returns in its position */
+        right: 20%;
+        bottom: -10px;
+    }
+}
+
 
