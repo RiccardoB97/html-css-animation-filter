@@ -40,3 +40,15 @@
 .ex-5-square:active{
     transform: scale(.8);
 }
+
+.ex-6-img:hover{
+    filter: grayscale();
+}
+
+.ex-7-img{
+    transition: 2s;
+}
+
+.ex-7-img:hover{
+    filter: hue-rotate(180deg) opacity(30%);
+}
