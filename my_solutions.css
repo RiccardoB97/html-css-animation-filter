@@ -135,3 +135,42 @@
         right: 20%;
     }
 }
+
+.ex-13-button:hover .ex-13-top-white{
+    animation: rotateTop 3s linear;
+}
+
+@keyframes rotateTop{
+    0%{
+        /* Starting position */
+        left: 10%;
+        top: -10px;
+    }
+    25%{
+        /* Moves all the way to the left minus half of its width*/
+        left: calc(100% - 30px);
+        top: -10px;
+    }
+    50%{
+        /* Moves down on the right side of 100% minus its height*/
+        left: 100%;
+        top: calc(100% - 10px);
+    }
+    75%{
+        /* Moves left on the bottom side */
+        left: 0;
+        top: 100%;
+    }
+    95%{
+        /* Moves up on the left */
+        left: -20px;
+        top: -10px;
+    }
+
+    100%{
+        /* Returns in its position */
+        left: 10%;
+        top: -10px;
+    }
+}
+
