@@ -97,3 +97,41 @@
         transform: rotate(0);
     }
 }
+
+.ex-12-button:hover .ex-12-top-white{
+    animation: moveTop 1s linear;
+}
+
+@keyframes moveTop{
+    0%{
+        /* Same position as given in style css */
+        left: 10%;
+    }
+    50%{
+        /* Moves 100% away from left minus its size */
+        left: calc(100% - 60px);
+    }
+    100%{
+        /* Moves back in position */
+        left: 10%;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: moveBottom 1s linear;
+}
+
+@keyframes moveBottom{
+    0%{
+        /* Same position as given in style css */
+        right: 20%;
+    }
+    50%{
+        /* Moves 100% away from right minus its size */
+        right: calc(100% - 60px);
+    }
+    100%{
+        /* Moves back in position */
+        right: 20%;
+    }
+}
