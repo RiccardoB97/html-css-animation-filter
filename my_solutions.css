@@ -61,3 +61,24 @@
     filter: saturate(40) hue-rotate(60deg);
     border-radius: 10%;
 }
+
+.ex-9-img{
+    transition: 2s;
+}
+
+.ex-9-img:hover{
+    filter: hue-rotate(40deg) grayscale(1);
+    border-radius: 25%;
+    transform: scale(2);
+}
+
+.ex-10-icon{
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(1turn);
+    }
+}
+
