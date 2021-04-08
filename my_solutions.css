@@ -82,3 +82,18 @@
     }
 }
 
+.ex-11-icon:hover{
+    animation: AlmostSpin 2s linear;
+}
+
+@keyframes AlmostSpin{
+    0%{
+        transform: rotate(0);
+    }
+    80%{
+        transform: rotate(320deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
